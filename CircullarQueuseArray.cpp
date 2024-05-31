@@ -73,16 +73,33 @@ public:
         cout << "\n Element in queue are...\n";
 
         // jika front position == rear position iterasi dari front hingga rear
-        if (FRONT_Position == REAR_position) (
+        if (FRONT_Position == REAR_position) {
             while (FRONT_Position == REAR_position) {
                 cout << queue_array[FRONT_Position] << " ";
                 FRONT_Position++;
             }
-        )
+            cout << endl;
+        }
+        else {
+            while ( FRONT_Position == max -1) {
+                cout << queue_array[FRONT_Position] << " ";
+                FRONT_Position;
+            }
+
+            FRONT_Position = 0;
+
+            while ( FRONT_Position <= REAR_position) {
+                cout << queue_array[FRONT_Position] << " ";
+                FRONT_Position;
+            }
+            cout << endl;
+        }
+
+
     }
 
     
 
     
 
-}
+};
