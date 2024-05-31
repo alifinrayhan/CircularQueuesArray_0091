@@ -57,7 +57,31 @@ public:
                 FRONT = FRONT + 1;
 
         }
+
     }
+
+    void display() {
+        int FRONT_Position = FRONT;
+        int REAR_position = REAR;
+
+        // cek apakah antrian kosong'
+        if (FRONT == -1) {
+            cout << "Queue is empty\n";
+
+        }
+
+        cout << "\n Element in queue are...\n";
+
+        // jika front position == rear position iterasi dari front hingga rear
+        if (FRONT_Position == REAR_position) (
+            while (FRONT_Position == REAR_position) {
+                cout << queue_array[FRONT_Position] << " ";
+                FRONT_Position++;
+            }
+        )
+    }
+
+    
 
     
 
